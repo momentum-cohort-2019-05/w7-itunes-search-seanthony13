@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>iTunes Search</title>
+</head>
+<body>
+    <h1 id="mainHeading">Sarah's Awesome Music Search</h1>
+    <input id="searchBar" type="text" placeholder="Search iTunes">
+    <div id="searchAttribute">
+        Search For:
+        <div id="searchAttributeSelection">
+            <input type="radio" name="attributeSelection" id="artist" value="artistTerm" checked> 
+            <label for="artist">Artist</label>
+            <input type="radio" name="attributeSelection" id="song" value="songTerm" checked>
+            <lable for="song">Song</lable>
+            <input type="radio" name="attributeSelection" id="album" value="albumTerm" checked>
+            <label for="album">Album</label>
+        </div>
+    </div>
+    <div id="searchLimit">
+        Limit To:
+        <select id="searchLimitSelection">
+            <option value="25">25 results<results></option>
+            <option value="50">50 results</option>
+            <option value="100">100 results</option>
+        </select>
+    </div>
+    <button id="searchButton">search</button>
+    <div id="results">
+        <h2>Results</h2>
+        <div id="resultPreview">
+            <img id="resultPreviewImg" src="" hidden>
+            <p id="resultPreviewDescription" hidden></p>
+            <audio id="resultPreviewAudio" controls src=""></audio>
+        </div>
+        <p id="resultsDescription" hidden></p>
+        <div id="resultsDisplay">
+        </div>
+    </div>
+</body>
+</html>
+

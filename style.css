@@ -1,0 +1,54 @@
+html, body {
+    height: 100%;
+}
+
+#mainHeading, h1, h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#searchBar {
+    display: block;
+    margin: auto;
+    text-align: center;
+    min-width: 40%;
+    max-width: 40%;
+    font-size: 2rem;
+}
+
+#searchButton {
+    display: block;
+    margin: 1rem auto;
+}
+
+#searchAttribute, #searchLimit {
+    text-align: center;
+    margin: 1rem;
+}
+
+#resultsDescription {
+    text-align: center;
+}
+
+#resultPreview {
+    text-align: center;
+}
+
+/* h1, h2 {
+    text-align: center;
+} */
+
+#resultsDisplay {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+}
+
+.result {
+    margin: 1rem;
+}
+
